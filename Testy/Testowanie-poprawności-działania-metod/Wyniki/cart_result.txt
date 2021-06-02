@@ -1,0 +1,57 @@
+############################ Testing microservices cart ############################
+############################ Method CreateCart ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   332  100   237  100    95   6405   2567 --:--:-- --:--:-- --:--:--  8972
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 237
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"id":"609cdc3ecbce0cc4a055cfc7","products":[{"idProduct":"609cd2e26619b148e45b7348","name":"Cyberpunk","price":"16"},{"idProduct":"609cd2e26619b148e45b7349","name":"GTA V","price":"160"}],"idUser":"2ebf2414-21da-48ef-b7aa-96abc89ac34f"}0.001063,0.037889,6405.000,200,237,http://api.micro:443/cart/create/
+############################ Method GetCart ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   290  100   237  100    53  29625   6625 --:--:-- --:--:-- --:--:-- 36250
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 237
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"id":"609cdc3ecbce0cc4a055cfc7","products":[{"idProduct":"609cd2e26619b148e45b7348","name":"Cyberpunk","price":"16"},{"idProduct":"609cd2e26619b148e45b7349","name":"GTA V","price":"160"}],"idUser":"2ebf2414-21da-48ef-b7aa-96abc89ac34f"}0.004183,0.008509,29625.000,200,237,http://api.micro:443/cart/getCart/
+############################ Method DeleteCart ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   290  100   237  100    53  47400  10600 --:--:-- --:--:-- --:--:-- 58000
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 237
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"id":"609cdc3ecbce0cc4a055cfc7","products":[{"idProduct":"609cd2e26619b148e45b7348","name":"Cyberpunk","price":"16"},{"idProduct":"609cd2e26619b148e45b7349","name":"GTA V","price":"160"}],"idUser":"2ebf2414-21da-48ef-b7aa-96abc89ac34f"}0.001033,0.005705,47400.000,200,237,http://api.micro:443/cart/deleteCart/
+############################ Method DeleteProduct ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   259  100   164  100    95  27333  15833 --:--:-- --:--:-- --:--:-- 43166
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 164
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"id":"609cdc3ecbce0cc4a055cfc8","products":[{"idProduct":"609cd2e26619b148e45b7349","name":"GTA V","price":"160"}],"idUser":"39399d25-ef5e-46a3-a4f0-17606f1824a2"}0.001810,0.006743,27333.000,200,164,http://api.micro:443/cart/deleteProduct/

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: micro
+  name: cart
+  labels:
+    app: cart
+data:
+  DB_HOST: "mongodb://cart-mongo:27017"

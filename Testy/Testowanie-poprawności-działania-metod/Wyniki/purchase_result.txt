@@ -1,0 +1,29 @@
+############################ Testing microservices purchase ############################
+############################ Method Start ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   325  100   272  100    53   5787   1127 --:--:-- --:--:-- --:--:--  6914
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 272
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"products":[{"idProduct":"609cd2e26619b148e45b7349","name":"GTA V","price":"160"},{"idProduct":"609cd2e26619b148e45b7348","name":"Cyberpunk","price":"16"},{"idProduct":"609cd2e26619b148e45b734a","name":"FIFA 21","price":"200"}],"PriceOrder":"376.00","PriceSupply":"0.00"}0.001102,0.047252,5787.000,200,272,http://api.micro:443/purchase/start/
+############################ Method Implementation ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   321  100   143  100   178   3325   4139 --:--:-- --:--:-- --:--:--  7465
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 143
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"numberOrder":"609d340a885c4440eb4b34c7","Name":"Dominik","Surname":"Nowicki","numberAccount":"45 5555 5555 5555 1234 1234 ","Price":"376.00"}0.002439,0.043380,3325.000,200,143,http://api.micro:443/purchase/implementation/

@@ -1,0 +1,48 @@
+############################ Testing microservices product ############################
+############################ Method CreateProduct ############################
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 153
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:27:26 GMT
+
+{"created":true,"product":{"name":"Wiedźmin 3","description":"Wiedźmin 3","platform":"ps5","version":"pl","pegi":"18","price":"164","availability":10}}0.004283,0.056380,2732.000,200,153,http://api.micro:443/product/createProduct/
+
+############################ Method ListProduct ############################
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 943
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:28:57 GMT
+
+{"products":[{"id":"609cd2e26619b148e45b7348","name":"Cyberpunk","description":"cyberpunk","platform":"ps5","version":"pl","pegi":"19","price":"16","availability":10},{"id":"609cd2e26619b148e45b7349","name":"GTA V","description":"GTA V","platform":"ps5","version":"pl","pegi":"19","price":"160","availability":15},{"id":"609cd2e26619b148e45b734a","name":"FIFA 21","description":"FIFA 21","platform":"ps5","version":"pl","pegi":"3","price":"200","availability":110},{"id":"609d340a6619b148e45b734c","name":"Wiedźmin 3","description":"Wiedźmin 3","platform":"ps5","version":"pl","pegi":"18","price":"164","availability":10},{"id":"609d36fc6619b148e45b734d","name":"Wiedźmin 3","description":"Wiedźmin 3","platform":"ps5","version":"pl","pegi":"18","price":"164","availability":10},{"id":"609d374e6619b148e45b734e","name":"Wiedźmin 3","description":"Wiedźmin 3","platform":"ps5","version":"pl","pegi":"18","price":"164","availability":10}]}0.001528,0.046759,20500.000,200,943,http://api.micro:443/product/list/
+
+############################ Method DeleteProduct ############################
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 180
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:31:37 GMT
+
+{"deleted":true,"product":{"id":"609cd2e26619b148e45b7348","name":"Cyberpunk","description":"cyberpunk","platform":"ps5","version":"pl","pegi":"19","price":"16","availability":10}}0.004262,0.044931,4090.000,200,180,http://api.micro:443/product/deleteProduct/
+
+############################ Method GetProduct ############################
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 165
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:30:46 GMT
+
+{"product":{"id":"609cd2e26619b148e45b7348","name":"Cyberpunk","description":"cyberpunk","platform":"ps5","version":"pl","pegi":"19","price":"16","availability":10}}0.002938,0.006281,27500.000,200,165,http://api.micro:443/product/getProduct/

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: micro
+  name: orders
+  labels:
+    app: orders
+data:
+  DB_HOST: "mongodb://orders-mongodb:27017"

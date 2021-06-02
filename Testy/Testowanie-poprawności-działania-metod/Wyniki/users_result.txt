@@ -1,0 +1,71 @@
+############################ Testing microservices users ############################
+Method create\n
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   180  100    71  100   109    525    807 --:--:-- --:--:-- --:--:--  1333
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 71
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"user":{"name":"Jan","surname":"Nowak","email":"jan.nowak@gmail.com"}}0.001345,0.135190,525.000,200,71,http://api.micro:443/users/create/
+############################ Method Auth ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   453  100   384  100    69   4266    766 --:--:-- --:--:-- --:--:--  5089
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 384
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjp7ImlkIjoiMmViZjI0MTQtMjFkYS00OGVmLWI3YWEtOTZhYmM4OWFjMzRmIiwibmFtZSI6Ikpha3ViIiwic3VybmFtZSI6IkxpcyIsImVtYWlsIjoiamFrdWIubGlzNzc3QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJHpqR3k4S01qQWo2czVkRnY3UUhMTk9uc1I1UWI2TmNwL0JmbHlVelIzbDlEaTA5Y1Bnd21pIn0sImV4cCI6MTUwMDAsImlzcyI6InVzZXJzIn0.zl8O2XC5edmuK_5PveEch332ghzK-VAeHgZV94fZUvY"}0.002835,0.090049,4266.000,200,384,http://api.micro:443/users/auth/
+############################ Method GetUser ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   244  100   192  100    52  32000   8666 --:--:-- --:--:-- --:--:-- 40666
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 192
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"user":{"id":"2ebf2414-21da-48ef-b7aa-96abc89ac34f","name":"Jakub","surname":"Lis","email":"jakub.lis777@gmail.com","password":"$2a$10$zjGy8KMjAj6s5dFv7QHLNOnsR5Qb6Ncp/BflyUzR3l9Di09cPgwmi"}}0.003055,0.006364,32000.000,200,192,http://api.micro:443/users/get/
+############################ Method GetAll ############################ 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   780  100   778  100     2   126k    333 --:--:-- --:--:-- --:--:--  126k
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Length: 778
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+
+{"users":[{},{},{},{},{"id":"2ebf2414-21da-48ef-b7aa-96abc89ac34f","name":"Jakub","surname":"Lis","email":"jakub.lis777@gmail.com","password":"$2a$10$zjGy8KMjAj6s5dFv7QHLNOnsR5Qb6Ncp/BflyUzR3l9Di09cPgwmi"},{"id":"ac86aff5-1cb0-4635-86bc-85e7c535c818","name":"Dominik","surname":"Nowicki","email":"dominik.nowicki77@gmail.com","password":"$2a$10$2TC3A8TvPyRi0XLaHn.f2uP7LfzV0J00/4zgHDot99nGi/Dxl5bjK"},{"id":"39399d25-ef5e-46a3-a4f0-17606f1824a2","name":"Stanisław","surname":"Omen","email":"stanisław.omen77@gmail.com","password":"$2a$10$L/9muum/5WZNgGX.7H/PzORvYKT6LYUgqE0rztAeugllIGcE1coIW"},{"id":"80439491-a73a-4ed8-845f-c948e351d08a","name":"Jan","surname":"Nowak","email":"jan.nowak@gmail.com","password":"$2a$10$GSF.xT5VN4knB6Zbs0cHTOyuHIFB9y7VIzqQRca6/6FtSezCs6Tgi"}]}0.004207,0.006687,129666.000,200,778,http://api.micro:443/users/getAll/
+############################ Method ValidateToken ############################
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   499  100   112  100   387  18666  64500 --:--:-- --:--:-- --:--:-- 83166
+HTTP/1.1 500 Internal Server Error
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, Micro-Namespace
+Access-Control-Allow-Methods: POST, PATCH, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 13 May 2021 14:13:30 GMT
+Content-Length: 112
+
+{"Id":"go.micro.client","Code":500,"Detail":"token is expired by 450250h3m30s","Status":"Internal Server Error"}0.002568,0.006547,18666.000,500,112,http://api.micro:443/users/validateToken/
